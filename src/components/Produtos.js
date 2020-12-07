@@ -11,7 +11,6 @@ const Produtos = () => {
       .then((json) => setProdutos(json));
   }, []);
 
-  console.log(produtos);
   if (produtos === null) return null;
   return (
     <section className={styles.produtos + " animeLeft"}>
