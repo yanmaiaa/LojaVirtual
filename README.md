@@ -4,4 +4,4 @@
 
 <h2>Criação da Página Produtos - Fase em andamento</h2>
 
-![](.github/Produtos_page.PNG)
+![](.github/produtos_page.gif)
