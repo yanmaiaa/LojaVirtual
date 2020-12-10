@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Head from "./Head";
 import styles from "./Produto.module.css";
+import Head from "./Head";
 
 const Produto = () => {
   const [produto, setProduto] = React.useState(null);
@@ -34,14 +34,16 @@ const Produto = () => {
         title={` LojaVirtual | ${produto.nome}`}
         description={` LojaVirtual | Escolha o seu produto: ${produto.nome}`}
       />
+      <div>
       {produto.fotos.map((foto) => (
         <img key={foto.src} src={foto.src} alt={foto.titulo} />
       ))}
+      </div>
       <div>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>{produto.preco}</span>
+      <p className={styles.descricao}>{produto.descricao}</p>
       </div>
-      <p className={produto.descricao}>{produto.descricao}</p>
     </section>
   );
 };
